@@ -284,7 +284,7 @@
         <h2>
             撸码不易，如果对您有所帮助，欢迎您的赞赏 </h2>
         <p style="height: 300px;width: 950px">
-            <img height="300" src="../img/wx_pay.jpg" style="float: left"/>
+            <img height="300" src="wx_pay.jpg" style="float: left"/>
             <img height="280" src="app1.png" style="float: left;margin-left: 10px;"/>
         </p>
         <hr>
@@ -305,7 +305,7 @@
         <script>
 
             var template = "<article class=\"comment\">" +
-                "                <img alt=\"\" class=\"comment-img\" height=\"64\" src=\"../img/snail.png\" width=\"64\">" +
+                "                <img alt=\"\" class=\"comment-img\" height=\"64\" src=\"snail.png\" width=\"64\">" +
                 "                <div class=\"comment-body\">" +
                 "                    <div class=\"text\">" +
                 "                        <p>${msg}</p>" +
@@ -331,7 +331,7 @@
             });
             var page = 1;
             var list = function () {
-                $.post("/api/woniu/listComment", {page: page, rows: 20}, function (result) {
+                $.post("http://81.69.231.222:8080/api/woniu/listComment", {page: page, rows: 20}, function (result) {
                     if (result.length > 0) page++;
                     for (var i = 0; i < result.length; i++) {
                         var t = template;
@@ -358,7 +358,7 @@
                 if ($(".click2edit").summernote("isEmpty")) return;
 
                 $(".click2edit").summernote("reset");
-                $.post("/api/woniu/addComment", {msg: msg}, function (result) {
+                $.post("http://81.69.231.222:8080/api/woniu/addComment", {msg: msg}, function (result) {
                     if (result.code == 0) {
                         page = 1;
                         $("#msglist").empty();
