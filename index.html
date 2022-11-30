@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>蜗牛云盘</title>
+        <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="webkit" name="renderer">
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="/css/animate.min.css" rel="stylesheet"/>
+        <link href="/css/style.min.css" rel="stylesheet"/>
+        <script src="/js/jquery.min.js?v=3.6.0"></script>
+        <script src="/js/bootstrap.min.js?v=3.3.7"></script>
+        <script src="/ajax/libs/summernote/summernote.min.js?v=0.8.18"></script>
+        <script src="/ajax/libs/summernote/summernote-zh-CN.js?v=0.8.18"></script>
+        <link href="/ajax/libs/summernote/summernote.css?v=0.8.18" rel="stylesheet"/>
+        <base target="_blank"/>
+        <style type="text/css">
+            html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+                margin: 0;
+                padding: 0
+            }
+
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                display: block
+            }
+
+            body {
+                line-height: 1
+            }
+
+            ol, ul {
+                list-style: none
+            }
+
+            blockquote, q {
+                quotes: none
+            }
+
+            blockquote:before, blockquote:after, q:before, q:after {
+                content: none
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0
+            }
+
+            a {
+                text-decoration: none;
+                color: #0072c6;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: #004d8c;
+            }
+
+            body {
+                font: 16px/1.4 Arial, sans-serif;
+                background: #f3eee9;
+                width: 960px;
+                margin: 0 auto;
+                padding: 10px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #454545;
+                font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', DengXian, SimSun, 'Segoe UI', Tahoma, Helvetica, sans-serif;
+                overflow-y: scroll
+            }
+
+            h1 {
+                font-size: 40px;
+                line-height: 80px;
+                font-weight: 100;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 100;
+                margin: 10px 0;
+            }
+
+            em {
+                color: red
+            }
+
+            p {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+
+            hr {
+                margin: 20px 0;
+                border: 0;
+                border-top: 1px solid #dadada
+            }
+
+            span {
+                display: block;
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            .clean {
+                clear: both;
+            }
+
+            article, aside, figure, footer, header, hgroup,
+            menu, nav, section {
+                display: block;
+            }
+
+
+            p {
+                margin: 0 0 1em;
+            }
+
+            .comment {
+                overflow: hidden;
+                padding: 0 0 1em;
+                border-bottom: 1px solid #ddd;
+                margin: 0 0 1em;
+                *zoom: 1;
+            }
+
+            .comment-img {
+                float: left;
+                margin-right: 33px;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .comment-img img {
+                display: block;
+            }
+
+            .comment-body {
+                overflow: hidden;
+            }
+
+            .comment .text {
+                padding: 10px;
+                border: 1px solid #e5e5e5;
+                border-radius: 5px;
+                background: #fff;
+            }
+
+            .comment .text p:last-child {
+                margin: 0;
+            }
+
+            .comment .attribution {
+                margin: 0.5em 0 0;
+                font-size: 14px;
+                color: #666;
+            }
+
+            /* Decoration */
+
+            .comments,
+            .comment {
+                position: relative;
+            }
+
+            .comment:hover:before {
+                background: orange;
+            }
+
+            .comment .text:before {
+                top: 18px;
+                left: 78px;
+                width: 9px;
+                height: 9px;
+                border-width: 0 0 1px 1px;
+                border-style: solid;
+                border-color: #e5e5e5;
+                background: #fff;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2>
+            <a href="http://81.69.231.222:8080/html/woniu_tv.html" style="color: #c60000;">蜗牛云盘TV版下载地址</a>
+        </h2>
+        <h1>蜗牛云盘下载地址</h1>
+        <h2>最新版：V1.3.9</h2>
+        <p>更新记录：
+            <br>
+            1、优化：暗色模式不伤眼；
+            <br>
+            2、新增：调用Kodi、MXplayer 第三方播放器
+            <br>
+            3、优化：相册浏览模式优化
+            <br>
+            4、优化：播放器异常处理优化
+            <br>
+            5、其他功能细节优化
+            <br>
+        </p>
+        <p>蓝奏云下载地址：
+            <a href="https://wwt.lanzouv.com/b03vhs7zc">https://wwt.lanzouv.com/b03vhs7zc</a> &nbsp;&nbsp; 密码:huax
+        </p>
+        <p>交流QQ群：
+            <b>
+                <font style="color: #140df7">682228297</font>
+            </b>
+        </p>
+        <h2>更新记录</h2>
+        <p>V1.3.8
+            <br>
+            1、新增：FFMPEG解码，支持更多音频格式；AV1高清解码；
+            <br>
+            2、新增：开放播放器触屏控制音量和亮度设置项
+            <br>
+            3、新增：重复文件一键清理功能
+            <br>
+            4、新增：自动过滤违规失效文件功能
+            <br>
+            5、新增：图片全屏浏览增加自动播放功能；图片全屏浏览支持视频文件点击播放
+            <br>
+            6、其他功能细节优化
+            <br>
+        </p>
+        <p>V1.3.7
+            <br>
+            1、新增视频比例调整、倍速播放等功能
+            <br>
+            2、新增多用户登录切换等功能
+            <br>
+            3、其他功能细节优化
+            <br>
+        </p>
+        <p>V1.3.6
+            <br>
+            1、新增相册和图片浏览功能
+            <br>
+            2、新增office文件浏览功能
+            <br>
+            3、其他功能细节优化
+            <br>
+        </p>
+        <p>V1.3.5
+            <br>
+            1、新增字幕开关功能
+            <br>
+            2、其他功能细节优化
+            <br>
+        </p>
+        <p>V1.2
+            <br>
+            1、新增清晰度选择功能
+            <br>
+            2、新增原画模式，支持音轨和字幕轨切换
+            <br>
+            3、其他功能细节优化
+            <br>
+        </p>
+
+        <hr>
+        <p>功能介绍：基于阿里云盘API开发，适配安卓平板和车机，暂时只提供视音频观看功能。 实现以下功能：
+            <br>
+            1、视音频连播功能：顺序、随机、循环模式
+            <br>
+            2、播放历史：记忆断点
+            <br>
+            3、收藏：长按文件夹或文件进行收藏或取消收藏
+            <br>
+            4、字幕匹配：支持云盘同目录下字幕文件选择加载；支持射手字幕Api自动匹配字幕；兼容各种格式字幕，解决乱码问题
+        </p>
+        <h2>
+            撸码不易，如果对您有所帮助，欢迎您的赞赏 </h2>
+        <p style="height: 300px;width: 950px">
+            <img height="300" src="../img/wx_pay.jpg" style="float: left"/>
+            <img height="280" src="app1.png" style="float: left;margin-left: 10px;"/>
+        </p>
+        <hr>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>发布评论</h5>
+                <button class="btn btn-primary  btn-xs" id="save" onclick="save()" style="margin-left: 20px;" type="button">保存</button>
+            </div>
+            <div class="ibox-content" id="eg">
+                <div class="click2edit wrapper"></div>
+            </div>
+        </div>
+        <section class="comments" id="msglist" style="margin-top: 30px;"></section>
+        <div style="height: 80px;margin-top: 20px;text-align: center;">
+            <div class="btn btn-sm btn-success" onclick="loadmore();"> 加载更多</div>
+        </div>
+
+        <script>
+
+            var template = "<article class=\"comment\">" +
+                "                <img alt=\"\" class=\"comment-img\" height=\"64\" src=\"../img/snail.png\" width=\"64\">" +
+                "                <div class=\"comment-body\">" +
+                "                    <div class=\"text\">" +
+                "                        <p>${msg}</p>" +
+                "                    </div>" +
+                "                    <p class=\"attribution\">" +
+                "                        ${time} </p>" +
+                "                </div>" +
+                "            </article>";
+            $(document).ready(function () {
+                $('.click2edit').summernote({
+                    toolbar: [],
+                    minHeight: 100,
+                    maxHeight: 100,
+                    codeviewFilter: false,
+                    codeviewIframeFilter: true,
+                    lang: 'zh-CN',
+                    placeholder: "请输入评论内容",
+                    inheritPlaceholder: true,
+                    disableResizeEditor: true
+                });
+                $('.note-statusbar').hide();
+                list();
+            });
+            var page = 1;
+            var list = function () {
+                $.post("/api/woniu/listComment", {page: page, rows: 20}, function (result) {
+                    if (result.length > 0) page++;
+                    for (var i = 0; i < result.length; i++) {
+                        var t = template;
+                        t = t.replace("${msg}", result[i].msg);
+                        t = t.replace("${time}", result[i].time);
+                        $("#msglist").append(t);
+                    }
+
+                });
+            }
+
+            function loadmore() {
+                list();
+            }
+
+            var save = function () {
+                var msg = $('.click2edit').summernote('code');
+                var text = $('<div>' + msg + '</div>').text();
+                var checkMsg = text.replace(/\s+/g, '');
+                if (checkMsg.length == 0) {
+                    $(".click2edit").summernote("reset");
+                    return;
+                }
+                if ($(".click2edit").summernote("isEmpty")) return;
+
+                $(".click2edit").summernote("reset");
+                $.post("/api/woniu/addComment", {msg: msg}, function (result) {
+                    if (result.code == 0) {
+                        page = 1;
+                        $("#msglist").empty();
+                        list();
+                    }
+                });
+            };
+        </script>
+    </body>
+</html>
